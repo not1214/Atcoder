@@ -32,8 +32,8 @@ hash = Hash.new(0)
 # p h
 A.each do |h|
   result += hash[h - K]
-  p result
+  # p result
   hash[h] += 1
-  p hash
+  # p hash
 end
 puts result
