@@ -24,7 +24,6 @@ for i in 1..N do
   end
 end
 
-
 # result = {}
 # N.times do |i|
 #   result[i+1] = 0
