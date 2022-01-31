@@ -17,7 +17,7 @@ array = gets.to_s.split.map{|t|t.to_i - A}.sort.reverse
  
 hash = Hash.new(0)
 hash[0] = 1
-# p hash
+p hash
 
 N.times do |i|
   
@@ -28,11 +28,12 @@ N.times do |i|
   hash.keys.each do |k|
     # p k
     N[k+t] += hash[k]
+    # p hash[k]
   end
   # p N
   hash = N.dup
-  p hash
+  # p hash
   
 end
-# p hash
+p hash
 # puts hash[0] - 1
