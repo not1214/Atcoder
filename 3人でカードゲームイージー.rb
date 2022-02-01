@@ -1,6 +1,6 @@
-# A = gets.chomp.split('')
-# B = gets.chomp.split('')
-# C = gets.chomp.split('')
+A = gets.chomp.split('')
+B = gets.chomp.split('')
+C = gets.chomp.split('')
 # # p A
 
 # loop do
@@ -17,25 +17,30 @@
 # end
 
 arr = Array.new(3) { gets.chomp.chars }
+# 以下の配列はできない
+# A = gets.split('')
+# B = gets.split('')
+# C = gets.split('')
+# arr = Array.new(A, B, C)
 # p arr
 i = "a"
-while true
+while true do
   if i=="a"
     if arr[0].size == 0
       puts "A"
-      exit
+      break
     end
     i = arr[0].shift
   elsif i=="b"
     if arr[1].size == 0
       puts "B"
-      exit
+      break
     end
     i = arr[1].shift
   elsif i=="c"
     if arr[2].size == 0
       puts "C"
-      exit
+      break
     end
     i = arr[2].shift
   end
