@@ -14,6 +14,7 @@ for i in 0..n - 1
   elsif ary[i][2] == 4 && ary[i][1] < h
     h = ary[i][1]
   end
+  # p "#{x} #{w} #{y} #{h}"
 end
 if w - x <= 0 || h - y <= 0
   puts 0
