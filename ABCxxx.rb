@@ -1,6 +1,8 @@
-N = gets.to_s
+# N = gets.to_s
 
-result = ["ABC"]
-result << N
+# result = ["ABC"]
+# result << N
 
-puts result.join
+# puts result.join
+
+puts "ABC#{gets}"
